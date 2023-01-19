@@ -1,0 +1,20 @@
+var n = [Math.floor(Math.random()*100) + 1];
+let guess;
+let chances =0;
+do{
+  guess = prompt('enter a number');
+  guess = Number.parseInt(guess);
+  chances++
+  if (guess<n){
+    console.log('your guess is less than the n')
+  }
+  if (guess>n){
+    console.log('your guess is greater than the n')
+  }
+}while(guess!=n);
+if (guess = n){
+      console.log(`your guess is correct after`)
+  
+}
+let score = 100-chances
+console.log(`your score is ${score}`);
